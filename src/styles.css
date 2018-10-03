@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border:0px;
+  margin:0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border:0px;
+  margin:0px;
+}
+
+goban-root {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border:0px;
+  margin:0px;
+}

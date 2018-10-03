@@ -1,0 +1,5 @@
+  <div id="principal">
+    <div *ngFor="let ligne of goban.grille" class="ligne">
+      <goban-position *ngFor="let case of ligne" [positionModel]="case" class="colonne" (positionClicked)="remonte($event)"></goban-position>
+    </div>
+  </div>

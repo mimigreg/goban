@@ -1,0 +1,30 @@
+svg {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+svg line {
+  stroke: #000000;
+  stroke-width:5px;
+}
+
+svg circle {
+  stroke:#000000;
+  stroke-width:1px;
+  fill: #000000;
+}
+
+svg circle.noir {
+  stroke-width: 0px;
+  fill: #000000;
+  stroke: #000000;
+}
+
+svg circle.blanc {
+  stroke-width: 0px;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}

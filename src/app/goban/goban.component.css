@@ -1,0 +1,28 @@
+#principal {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  height: 45vw;
+  width: 45vw;
+  background-color: darkorange;
+}
+
+.ligne {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row;
+}
+
+.colonne {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 100%;
+}
