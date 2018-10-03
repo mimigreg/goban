@@ -1,7 +1,12 @@
 <div>
   <p>
-Pierres blanches capturées : {{partie.capturesBlanc}}
-</p><p>
-Pierres noires capturées : {{partie.capturesNoir}}
-</p>
+    Aux <span *ngIf="partie.auxBlancsDeJouer">Blancs</span><span *ngIf="!partie.auxBlancsDeJouer">Noirs</span> de jouer
+  </p>
+  <p>
+    Pierres blanches capturées : {{partie.capturesBlanc}}
+  </p>
+  <p>
+    Pierres noires capturées : {{partie.capturesNoir}}
+  </p>
+  <button (click)="passer()">Passer</button>
 </div>

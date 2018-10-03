@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PartieModel } from '../model/partie.model';
 
 @Component({
@@ -11,9 +11,15 @@ export class CommandesComponent implements OnInit {
   @Input()
   partie: PartieModel;
 
+  @Output() passClicked: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  passer() {
+      this.passClicked.emit();
   }
 
 }

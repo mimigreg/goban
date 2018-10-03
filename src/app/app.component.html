@@ -1,5 +1,5 @@
 <div>
   <goban-goban [goban]="partie.goban" (gobanClicked)="pose($event)"></goban-goban>
-  <goban-commandes [partie]="partie"></goban-commandes>
+  <goban-commandes [partie]="partie" (passClicked)="passer()"></goban-commandes>
 </div>
 

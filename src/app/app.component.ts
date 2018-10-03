@@ -53,4 +53,6 @@ export class AppComponent implements OnInit {
     }
   }
 
+  passer() {
+    this.partie.auxBlancsDeJouer = !this.partie.auxBlancsDeJouer;
 }
