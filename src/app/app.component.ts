@@ -34,7 +34,14 @@ export class AppComponent implements OnInit {
     const okEtCaptures = this.regles.droitDePoser(position, this.partie.goban.grille, this.partie.auxBlancsDeJouer, this.partie.historique);
     if (okEtCaptures) {
       for (const positionDePrise of okEtCaptures) {
+        // On retire le pion
         this.partie.goban.grille[positionDePrise.v][positionDePrise.h].occupation = undefined;
+        // On compte la prise
+        if (this.partie.auxBlancsDeJouer) {
+          this.partie.capturesNoir ++;
+        } else {
+          this.partie.capturesBlanc ++;
+        }
       }
       // on pose son pion
       this.partie.goban.grille[position.v][position.h].occupation = this.partie.auxBlancsDeJouer;

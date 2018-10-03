@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GobanComponent } from './goban/goban.component';
 import { PositionComponent } from './position/position.component';
+import { CommandesComponent } from './commandes/commandes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GobanComponent,
-    PositionComponent
+    PositionComponent,
+    CommandesComponent
   ],
   imports: [
     BrowserModule
